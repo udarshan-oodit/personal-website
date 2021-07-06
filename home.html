@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udarshan Oodit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d90b5a408c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body class="bg-main bg-pattern">
+
+    <div class="alert alert-dark hide" role="alert" id="email-alert">
+        <strong>Email Copied! </strong>
+        <button onclick="hide_alert()" class="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>      
+
+    <div class="d-flex justify-content-center flex-column align-items-center">
+
+        <div class="half-circle bg-main-2 d-flex flex-column align-items-center">
+            <div class="profile-name"> Udarshan Oodit</div>
+            <div class="fw-light fs-3 fst-italic profile-sub-title">Software Engineer</div>
+            <img src="images/me.jpg" class="profile-pic">
+        </div>
+
+        <div class="icons d-flex justify-content-center align-items-center my-2">
+            <a href="https://www.linkedin.com/in/udarshan-oodit/" target="_blank"><i class="fab fa-linkedin-in mx-2 icon-grow"></i></a>
+            <i class="fas fa-circle icon-divider mx-2"></i>
+            <a href="https://github.com/udarshan-oodit" target="_blank"><i class="fab fa-github mx-2 icon-grow"></i></a> 
+            <i class="fas fa-circle icon-divider mx-2"></i>
+            <i class="fas fa-envelope mx-2 icon-grow" onclick="copy_mail()"></i></i>
+        </div>
+
+        <div>
+            <p class="fs-6 fst-italic">udarshanoodit@gmail.com</p>
+        </div>
+
+        <div class='spacer'></div>
+        <div class="test">
+
+        </div>
+        
+        <div class="my-5 d-flex flex-column align-items-center">
+            <a class="fs-3 header-link my-2" href="#projects"> Projects</a>
+            <a class="fs-3 header-link my-2" href="#work">Work Experience</a>
+            <a class="fs-3 header-link my-2" href="#education">Education</a>
+            <a class="fs-3 header-link my-2" href="#me">About Me</a>
+        </div>
+
+        <div class='spacer'></div>
+        <div class='spacer'></div>
+        <div class='spacer'></div>
+
+        <p class="fs-3 header text-center py-4" id="projects"> Projects </p>
+
+
+        <div class='project'>
+            <p class="text-center fs-6 mt-4"><i class="fas fa-horse"></i></p>
+            <p class="fs-3 text-center pt-2"> </i> Equine Health </p>
+            <p class="fs-5 fst-italic text-center pb-2">Equine Health is a mobile app that allows vets in South Africa to track horse diseases around the country. </p>
+            <div class="d-flex justify-content-center my-4">
+                <img title="Python" src="images/python.svg" class="tech-icon mx-2">
+                <img title="Django" src="images/django-icon.svg" class="tech-icon mx-2">
+                <img title="Flutter" src="images/flutter.svg" class="tech-icon mx-2">
+            </div>
+            <p>
+                <ul>
+                    <li>Fully in charge of designing, developing, deploying and maintaining ios and android mobile apps and a backend API</li>
+                    <li>API developed in Python, Django & the Django Rest Framework and deployed on DigitalOcean</li>
+                    <li>Mobile app designed using Figma and developed using Dart & Flutter</li>
+                    <li>3rd party integrations with Google AdMob, Google Maps and Firebase.</li>
+                    <li>The app is planned to have 3rd party integrations to automatically send samples to labs and to build a model for predicting possible disease outbreaks around the country.</li>
+                </ul>
+                
+            </p>
+            <p class="fs-4 text-center pt-2 mt-4"> </i> Download Here </p>
+            <div class="d-flex justify-content-center my-4">
+                <a href="https://play.google.com/store/apps/details?id=com.equine_health_mobile_app" class="download-box">
+                    <img src="images/google-play-icon.svg" class="download-icon">
+                    <p class="text-center my-2"> Play Store </p>
+                </a>
+                <a >
+                    <img src="images/apple-app-store.svg" class="download-icon download-disabled">
+                    <p class="text-center my-2"> iOS (Coming Soon!)</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class='spacer'></div>
+
+        <div class='project'>
+            <p class="text-center fs-6 mt-4"><i class="fas fa-truck"></i></p>
+            <p class="fs-3 text-center pt-2"> </i> Orderbly </p>
+            <p class="fs-5 fst-italic text-center pb-2">Orderby is an app that provides a service for restaurants to  order produce from their suppliers.
+            </p>
+            <div class="d-flex justify-content-center my-4">
+                <img title="Flutter" src="images/flutter.svg" class="tech-icon mx-2">
+            </div>
+            <p>
+                <ul>
+                    <li>Responsible for building new features, maintaining and deploying a Flutter mobile app as well as contributing to both the backend and frontend development of the web app. </li>
+                    <li>The web app is built using Vue and uses a Ruby on Rails API.</li>
+                </ul>
+                
+            </p>
+        </div>
+
+        <div class='spacer'></div>
+
+       
+        <p class="fs-3 header text-center py-4" id="work"> Work Experience </p>
+
+        <div class='spacer'></div>
+
+        <div class='project'>
+            <p class="text-center fs-6 mt-4"><i class="fas fa-laptop-code"></i></p>
+            <p class="fs-3 text-center pt-2 mb-1"> <strong>Explore AI</strong>, Cape Town </p>
+            <p class="fs-4 text-center mb-1">Software Engineer</p>
+            <p class="fs-7 text-center mb-5">FEBRUARY 2021 - PRESENT</p>
+            <p>
+                <ul>
+                    <li>Introducing best practises into the development life-cycle: automated testing, CI/CD, git & github conventions, local/staging/production environments</li>
+                    <li>Involved in design and architecture decisions across multiple projects</li>
+                    <li>Refactoring and maintaining an OCR tool using Python, Django, AWS Textract, AWS S3.</li>                    
+                    <li>Built an ETL Pipeline using Azure Data Factory accessed via API using Django Rest Framework</li>
+
+                </ul>
+            </p>
+            <p class="fs-4 text-center mb-3 mt-5">Stack</p>
+            <div class="d-flex flex-wrap justify-content-center mb-3 tech-stack">
+                <img title="Python" src="images/python.svg" class="tech-icon mx-2">
+                <img title="Django" src="images/django-icon.svg" class="tech-icon mx-2">
+                <img title="Heroku" src="images/heroku.svg" class="tech-icon mx-2">
+                <img title="AWS" src="images/aws.svg" class="tech-icon mx-2">
+                <img title="GitHub" src="images/github-icon.svg" class="tech-icon mx-2">
+                <img title="HTML5" src="images/html-5.svg" class="tech-icon mx-2">
+                <img title="Js" src="images/javascript.svg" class="tech-icon mx-2">
+                <img title="CSS" src="images/css-3.svg" class="tech-icon mx-2">
+            </div>
+        </div>
+
+        <div class='spacer'></div>
+
+        <div class='project'>
+            <p class="text-center fs-6 mt-4"><i class="fas fa-laptop-code"></i></p>
+            <p class="fs-3 text-center pt-2"> <strong>Superbalist</strong>, Cape Town </p>
+
+            <div class="my-5 mt-3">
+                <p class="fs-4 text-center mb-1">Software Engineer II</p>
+                <p class="fs-7 text-center mb-2">MARCH 2020 - JANUARY 2021</p>
+                <p>
+                    <ul>
+                        <li>Implemented a 3rd party integration with a courier service provider to manage shipments between the warehouse and customers.</li>
+                        <li>Worked on a team to rebuild the frontend checkout flows using Vue.js, Vuex and building a backend for frontend using  Node.js .</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="my-5">
+                <p class="fs-4 text-center mb-1">Software Engineer I</p>
+                <p class="fs-7 text-center mb-2">FEB 2019 - MARCH 2020</p>
+                <p>
+                    <ul>
+                        <li>Implemented a 3rd party payment integration for Payflex within a PHP & Laravel backend</li>
+                        <li>Optimizing the website for Black Friday where there are over 150 000 users on the site at once. Improved the performance of product load times by 5%.</li>
+                    </ul>
+                </p>
+            </div>
+            
+            
+            <p class="fs-4 text-center mb-3">Stack</p>
+            <div class="d-flex flex-wrap justify-content-center mb-5 tech-stack">
+                <img title="PHP" src="images/php.svg" class="tech-icon mx-2">
+                <img title="Laravel" src="images/laravel.svg" class="tech-icon mx-2">
+                <img title="VueJS" src="images/vue.svg" class="tech-icon mx-2">
+                <img title="NodeJS" src="images/nodejs.svg" class="tech-icon mx-2">
+                <img title="Python" src="images/python.svg" class="tech-icon mx-2">
+                <img title="GitHub" src="images/github-icon.svg" class="tech-icon mx-2">
+                <img title="HTML5" src="images/html-5.svg" class="tech-icon mx-2">
+                <img title="Js" src="images/javascript.svg" class="tech-icon mx-2">
+                <img title="CSS" src="images/css-3.svg" class="tech-icon mx-2">
+                <img title="Kubernetes" src="images/kubernetes.svg" class="tech-icon mx-2">
+                <img title="Docker" src="images/docker.svg" class="tech-icon mx-2">
+            </div>
+        </div>
+
+        <div class='spacer'></div>
+
+        
+        <p class="fs-3 header text-center py-4" id="education"> Education </p>
+
+        <div class='spacer'></div>
+
+        <div class='project'>
+            <p class="text-center fs-6 mt-4"><i class="fas fa-graduation-cap"></i></p>
+            <p class="fs-3 text-center pt-2 mb-1"> <strong>University of Cape Town</strong>, Cape Town </p>
+            <p class="fs-4 text-center mb-1">BSc. Computer Science, Computer Engineering, Mathematics</p>
+            <p class="fs-7 text-center mb-5">JAN 2015 - DEC 2018</p>
+            <p>
+                <ul>
+                    <li>Distinction in Computer Science and Computer Engineering</li>
+                    <li>GPA of 72%</li>
+                    <li>Dean’s List 2016 and 2017</li>
+                    <li> <i class="fas fa-award fs-5 mx-2"></i><a target="_blank" href="https://www.cs.uct.ac.za/news-and-events/2016/uct-team-wins-prestigious-icpc-sa-regional-programming-contest">Placed 5th overall in South Africa ICPC Programming Contest</a></li> 
+                </ul>
+            </p>
+        </div>
+
+        <div class='spacer'></div>
+
+        <p class="fs-3 header text-center py-4" id="me"> About Me </p>
+        
+        <div class='spacer'></div>
+
+         <div class='project'>
+            <p class="text-center fs-6 mt-4"><i class="fas fa-user-ninja"></i></p>
+            
+            <p class="fs-4 text-center mb-1">If I'm not at work you'll find me...</p>
+            <p>
+                <ul>
+                    <li>Playing chess</li>
+                    <li>Exploring the local restaurants</li>
+                    <li>At home playing video games</li>
+                    <li>Out in nature</li>
+                </ul>
+            </p>
+
+            <p class="fs-4 text-center mb-4">Favorite Resources</p>
+
+            <a class="article my-3 d-flex" target="_blank" href="https://martinfowler.com/bliki/BeckDesignRules.html">
+                <div class="article-thumbnail d-none d-lg-block  fw-bold fs-3 text-center"> M.F </div>  
+                <div class="article-text mx-4">
+                    <p class="fs-4 mb-1 fw-bold"> Kent Beck's Design Rules </p>
+                    <p> Martin Fowler gives an overview of Kent Becks design principles.</p>
+                </div>
+            </a>
+
+            <a class="article my-3 d-flex" target="_blank" href="https://12factor.net/">
+                <div class="article-thumbnail d-none d-lg-block  fw-bold fs-3 text-center"> 12.F </div>  
+                <div class="article-text mx-4">
+                    <p class="fs-4 mb-1 fw-bold"> The 12 Factor App </p>
+                    <p> Principles for building software-as-a-service apps with a focus on scalability, flexibility and maintainability</p>
+                </div>
+            </a>
+
+            <a class="article my-3 d-flex" target="_blank" href="https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073">
+                <div class="article-thumbnail d-none d-lg-block  fw-bold fs-3 text-center"> T.C.C. </div>  
+                <div class="article-text mx-4">
+                    <p class="fs-4 mb-1 fw-bold"> The Clean Coder </p>
+                    <p> Uncle Bob writes about navigating software engineering as a professional</p>
+                </div>
+            </a>
+
+            <a class="article my-3 d-flex" target="_blank"  href="https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164">
+                <div class="article-thumbnail d-none d-lg-block  fw-bold fs-3 text-center"> C.A. </div>  
+                <div class="article-text mx-4">
+                    <p class="fs-4 mb-1 fw-bold"> Clean Architecture </p>
+                    <p> Uncle Bob writes about the universal rules of software architecture,</p>
+                </div>
+            </a>
+
+
+            <p class="fs-4 text-center my-5"> Personal Studies</p>
+
+
+            <a class="article my-3 d-flex" target="_blank" href="https://github.com/udarshan-oodit/design-patterns">
+                <div class="article-thumbnail fw-bold fs-3 text-center d-none d-lg-block ">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </div>  
+                <div class="article-text mx-4">
+                    <p class="fs-4 mb-1 fw-bold"> Design Patterns </p>
+                    <p> A few common design patterns implemented in python</p>
+                    <img title="Python" src="images/python.svg" class="article-icon">
+
+                </div>
+            </a>
+
+
+        </div>
+
+        <div class='spacer'></div>
+        <div class='spacer'></div>
+        <div class='spacer'></div>
+
+    </div>
+    
+
+    
+    
+</body>
+</html>
